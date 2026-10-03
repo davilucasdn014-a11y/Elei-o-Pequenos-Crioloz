@@ -1,0 +1,25 @@
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:#202020;font-family:Arial,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:25px;padding:20px;color:#111}
+.urna{width:min(900px,100%);background:#555;border:10px solid #333;border-radius:12px;box-shadow:0 15px 35px #0008}
+.topo{background:#ddd;padding:12px 20px;font-weight:bold;font-size:20px;border-bottom:4px solid #333}
+.conteudo{display:grid;grid-template-columns:1.6fr 1fr;gap:25px;padding:25px;background:#777}
+.tela{background:#eee;border:8px solid #222;min-height:390px;padding:30px;position:relative}
+.titulo{text-align:center;font-size:17px;border-bottom:2px solid #333;padding-bottom:15px}
+.mensagem{text-align:center;margin:20px 0;font-weight:bold;min-height:22px}
+.dados{display:flex;justify-content:space-between;gap:20px;margin-top:30px}
+.campos{font-family:monospace;font-size:18px;line-height:2.5}
+.foto{width:120px;height:150px;border:2px solid #333;display:flex;align-items:center;justify-content:center;font-size:13px;background:#ccc}
+.instrucao{position:absolute;bottom:20px;left:20px;right:20px;text-align:center;font-size:13px}
+.teclado{background:#222;padding:20px;border-radius:5px}
+.teclas{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.teclas button{height:60px;font-size:25px;background:#111;color:white;border:2px solid #666;border-radius:5px;cursor:pointer}
+.teclas button:active,.acoes button:active{transform:scale(.96)}
+.zero{grid-column:2}
+.acoes{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:25px}
+.acoes button{padding:14px 5px;font-weight:bold;border:0;border-radius:4px;cursor:pointer}
+.branco{background:#fff}.corrige{background:#f0b323}.confirma{background:#35a852;color:#fff}
+.resultado{width:min(900px,100%);background:#eee;padding:20px;border-radius:8px}
+.resultado h2{margin-top:0}
+#placar div{padding:8px;border-bottom:1px solid #bbb}
+.reset{margin-top:15px;padding:10px 15px;cursor:pointer}
+@media(max-width:700px){.conteudo{grid-template-columns:1fr}.tela{min-height:350px}.campos{font-size:14px}.foto{width:90px;height:120px}}
